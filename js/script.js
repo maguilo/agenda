@@ -310,7 +310,7 @@ function buscarContacto()
                     }
                     else
                     {
-                        alert("NINGUN RESULTADO DE: "+palabra+" FILTRADO POR: "+buscarPor);
+                        $('#tbContactos').html(r);
                     }
                 }
 

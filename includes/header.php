@@ -6,7 +6,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta name="author" content="Maguilo"/>
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" title="style"/>
-		<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.min.css" title="style"/>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css" title="style"/>
 		<link rel="stylesheet" type="text/css" href="css/style.css" title="style"/>
 	    <script type="text/javascript" src="js/jquery.js"></script>
 	    <script type="text/javascript" src="js/bootstrap.js"></script>
