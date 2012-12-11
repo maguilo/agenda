@@ -31,7 +31,7 @@ class Usuario {
     }
     function getApellidos()
     {
-        return $this->Apellidos;
+        return $this->apellidos;
     }
     function getEmail()
     {

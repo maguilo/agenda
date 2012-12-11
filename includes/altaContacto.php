@@ -65,7 +65,7 @@ else
 	    <div class="control-group">
 	    	<label class="control-label" for="inputContactoD">Contacto de</label>
 			<div class="controls">
-				<input type="text" class="inp" id="inputContactoDe" placeholder="¿quien lo agrego a la agenda?" name="contactoDe" value="<? echo $u->getNombre(); ?>" readonly>
+				<input type="text" class="input input-xlarge" id="inputContactoDe" placeholder="¿quien lo agrego a la agenda?" name="contactoDe" value="<? echo "".$u->getNombre()." ".$u->getApellidos(); ?>" readonly>
 			</div>
 			<label class="control-label" for="inputNotas">Notas</label>
 			<div class="controls">
