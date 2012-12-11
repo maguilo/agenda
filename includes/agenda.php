@@ -21,7 +21,7 @@
 		    </label>
 
 		    <span onclick='buscarContacto()' class="btn btn-small" id="btnBuscarContacto">Buscar</span>
-		    <span onclick='altaContacto()' class="btn btn-small" id="btnAltaContacto" name="" >Alta nuevo usuario</span>
+		    <span onclick='altaContacto()' class="btn btn-small" id="btnAltaContacto" name="" > Crear Contacto nuevo</span>
 		    </fieldset>
 
 		</form>
@@ -67,7 +67,7 @@
 <!--______________espacio para el contenido modal para busquedas por letra________________-->
 <div id="mimodal" class="modal fade hide">
 	<div class="modal-header">
-		<h2>Crear contacto nuevo</h2>
+		<h2>Nuevo contacto</h2>
 	</div>
 	<div class="modal-body">
 
