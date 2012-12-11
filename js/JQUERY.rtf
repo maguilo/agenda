@@ -1,0 +1,325 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1138\cocoasubrtf510
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\froman\fcharset0 Times-Roman;}
+{\colortbl;\red255\green255\blue255;\red243\green235\blue0;\red255\green255\blue51;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs24 \cf0 similar al onload de javasript\
+\pard\pardeftab720
+
+\f1 \cf0 $(document).on("ready",function()\{\
+ c\'f3digo\'85.\
+\})
+\f0\b\fs36 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 \
+SELECTORES JQUERY\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\b0\fs24 \cf0 $("Selector").Accion();\
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\b \cf0 ETIQUETAS
+\b0 \
+\
+$("p") // a todas las etiquetas de parrafo\
+$("div") // a todas las etiquetas div\
+$("body")  // a todo el contenido del body\
+\
+$("div p")  // a todos los elementos de p\'e1rrafo que est\'e9n contenidos dentro de un div\
+$("div > p")  // a todos los elementos de p\'e1rrafo que est\'e9n contenidos dentro de un div\
+			y tengan descendencia en primer grado\
+\
+$("
+\b :
+\b0 input") // a todas las etiquetas input\
+\
+	\ul encadenar varias etiquetas\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 \ulnone \
+$("
+\b :
+\b0 input,p") // a todas las etiquetas input y todos los parrafos\
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\b \cf0 IDENTIFICADOR
+\b0 \
+\
+$("#contenedor") //al elemento con id="contenedor"\
+\
+
+\b CLASES
+\b0 \
+\
+$(".resaltado") //a todos los elementos con class="resaltado"\
+$("div.resaltado")//a todos los elementos div que contengan class="resaltado"\
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\b\fs36 \cf0 FILTROS
+\b0\fs24 \
+$("Selector:filtro").Accion();\
+\
+$("div:\cb2 first\cb1 ").css("color","blue"); //aplica la propiedad css color al primer elemento div\
+$("div:\cb2 last\cb1 ").css("color","blue"); //aplica la propiedad css color al ultimo elemento div\
+$("div:\cb2 eq(n)\cb1 ").css("color","blue"); //aplica la propiedad css color al elemento que ocupa la posici\'f3n\
+						   n dentro del \'e1rbol de nodos, -la primera posici\'f3n es 0-\
+$("div:\cb2 has(p)\cb1 ").css("color","blue");//aplica la propiedad css color al p\'e1rrafo que este contenido\
+						   dentro de una etiqueta div\
+\pard\pardeftab720
+
+\f1 \cf0 $("tr:\cb2 even\cb1 ").css("background-color","yellow");//se aplica a todas las filas pares\
+$("tr:\cb2 odd\cb1 ").css("background-color","orange");//se aplica a todas las filas impares\
+$("tr:\cb3 lt(n)\cb1 ").css("background-color","blue");//se aplica a cada fila hasta la posici\'f3n n no incluida\
+$("tr:\cb3 gt(n)\cb1 ").css("background-color","blue");//se aplica a cada fila desde la posici\'f3n n hasta el final
+\f0 \
+
+\f1 $("tr td:\cb3 nth-child(1)\cb1 ").css("background","green");//dentro de cada fila a la columna especificada(empieza desde 1)
+\f0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 \
+\pard\pardeftab720
+
+\f1 \cf0 $("\cb2 div[id]\cb1 ").css("background-color","orange");//aplica el color solo a los div que tengan id \
+$("\cb2 div[id=dos\cb1 ]").css("background-color","orange");//aplica el color solo al div que tengan id=dos
+\f0 \
+
+\f1 $("div[id][id!=dos]").css("background-color","orange");//aplica el color solo a los div que tengan id y este no sea 									dos \
+$("div[id$=dos]").css("background-color","orange");//aplica el color a todos los div cuyo id termine en dos \
+$("div[id^=dos]").css("background-color","orange");//aplica el color a todos los div cuyo id empiece en dos
+\f0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\b\fs36 \cf0 ATRIBUTOS
+\b0\fs24 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\b\fs28 \cf0 a\'f1adir y extraer atributos
+\b0\fs24 \
+\pard\pardeftab720
+
+\f1 \cf0 $("img").attr("src","img/1.jpeg");//proporciona el atributo src a la etiqueta img \
+$("img").attr("title","Perrillo con chupe");//proporciona el atributo title a la etiqueta img \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\b\fs28 \cf0 extraer atributos
+\f1\b0\fs24 \
+\pard\pardeftab720
+\cf0 alert($("img").attr("title"));//muestra en pantalla el valor de title\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\b\fs28 \cf0 a\'f1adir atributos m\'faltiples
+\f1\b0\fs24 \
+\pard\pardeftab720
+\cf0 \
+$("img").attr(\{ \
+	src:"img/1.jpeg", \
+	title:"perrillo con chupe"\
+ \});\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\b\fs28 \cf0 a\'f1adir atributos con funciones
+\f1\b0\fs24 \
+\pard\pardeftab720
+\cf0 $("img").attr("title",function()\{ \
+	return "perrillo con chupe con funcion";\
+	//codigo\'85. \
+\});\
+\pard\pardeftab720
+
+\f0 \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\b\fs28 \cf0 eliminar atributos 
+\b0\fs24 \
+\pard\pardeftab720
+
+\f1 \cf0 $("img").removeAttr("title");//eliminar el attribute title de la etiqueta img\
+\
+\pard\pardeftab720
+
+\f0 \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\b\fs36 \cf0 CLASES\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\fs28 \cf0 Asignar clases css\
+\pard\pardeftab720
+
+\f1\b0\fs24 \cf0 $("p").addClass("fondo");//agrega el estilo css "fondo" al parrafo \
+$("p").addClass("color");\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\b\fs28 \cf0 Asignar m\'faltiples clases css\
+\pard\pardeftab720
+
+\f1\b0\fs24 \cf0 \
+$("p").addClass("fondo color");//asigna m\'faltiples clases separadas por un espacio\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\b\fs28 \cf0 Asignar clases css con funciones\
+\pard\pardeftab720
+
+\f1\b0\fs24 \cf0 $("p").addClass(function()\{\
+	return "condo";\
+\});\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\b\fs28 \cf0 \
+Eliminar clases css\
+\pard\pardeftab720
+
+\f1\b0\fs24 \cf0 $("p").removeClass("fondo");//elimina todas las clases asociadas al p\'e1rrafo
+\f0\b\fs28 \
+
+\f1\b0\fs24 $("p").removeClass("fondo");//elimina la clase fondo al parrafo\
+\
+\
+//asocia al evento click sobre el parrafo \
+$("p").click(function()\{ \
+	$("p").toggleClass("fondo");//a\'c3\'b1ade o elimina la clase css al parrafo \
+\})\
+\
+\
+\
+//asocia al evento click sobre el parrafo con contador\
+\
+var a=0; \
+$("p").click(function()\{ \
+$("p").toggleClass("fondo", a==1);//agrega la clase css al parrafo cuando el contador valga 1 a++; \
+\})\
+\
+$("p").text("ahora soy el parrafo nuevo");//sustituye el texto del parrafo por esta\
+\
+//para agragar etiquetas html\
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\b\fs36 \cf0 EVENTOS\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\fs28 \cf0 Asignar eventos
+\fs36 \
+\pard\pardeftab720
+
+\f1\b0\fs24 \cf0 //funciones para elementos que ya est\'e1n creados en el DOM\
+$("selector").bind("click ",function);// permite manipular varios eventos separados por un espacio con la misma 						funcion\
+\
+$("selector").click(funci\'f3n); //metodo simplificado, solo permite manipular un evento\
+\
+\
+//funciones para elementos que van a ser creados en el DOM\
+$("selector").live("click",function);\
+$("selector").delegate("selector","click",funci\'f3n); //permite seleccionar un selector hijo de otro y asignarle un 								evento\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\b\fs28 \cf0 Remover eventos\
+\pard\pardeftab720
+
+\f1\b0\fs24 \cf0 .unblind - igual que bind pero para removerlo\
+.die - igual que live pero para removerlo\
+.undelegate - igual que delegare pero para removerlo\
+\
+---------------------------------------------------------------------------------------------------------------------------\
+video 5\
+selectores avanzados\
+\
+$("selector").one("click",funci\'f3n);//permite accionar la funci\'f3n de un evento una sola vez\
+$("selector".trigger("click");//permite accionar el evento de alg\'fan elemento definido en el selector\
+$("selector").triggerHandler("click");//permite accionar la funci\'f3n del elemento que esta asociado al elemento\
+$("selector").toggle(function1,function2);//permite ejecutar varias funciones a medida que se vaya pulsando click\
+\
+---------------------------------------------------------------------------------------------------------------------------\
+video 6\
+estilos css desde jquery\
+\
+$("selector").css("background","yellow");//poner el condo de color amarillo\
+$("selector").addClass("resaltado");//permite agregar una clase css al dom\
+$("selector").toggleClass("resaltado");//permite hacer un alternado entre la clase\
+$("selector").height(30);//permite configurar el alto de un elemento\
+$("selector").width(30);//permite configurar el ancho de un elemento\
+\
+posiciones\
+$("selector")..offset();//devuelve la coordenada de un elemento\
+$("selector").position();//devuelve la coordenada de un elemento\
+\
+---------------------------------------------------------------------------------------------------------------------------\
+video 7\
+insertar contenidos en el DOM\
+\
+$("selector").append(contenido);//agrega el contenido a un selector\
+$(contenido).appendTo("selector");//a\'f1ade el contenido a un selector\
+$("selector").prepend(contenido);//permite anteponer contenido a un selector-al principio-\
+$(contenido).prependTo("selector")//a\'f1ade el contenido a un selector al principio\
+\
+---------------------------------------------------------------------------------------------------------------------------\
+video 8\
+como recorrer el DOM como jquery\
+\
+$("selector").children("selector");\
+$("selector").parent("selector");\
+$("selector").parents("selector");\
+$("selector").parentsUntil("selector");\
+$("selector").offsetParent("selector");\
+\
+\
+\
+---------------------------------------------------------------------------------------------------------------------------\
+video 9\
+metodos de filtros\
+\
+$("selector").eq(\'edndex);//para filtrar seg\'fan la posici\'f3n\
+$("selector").first();//para filtrar el primer elemento\
+$("selector").last();//para filtrar el ultimo elemento\
+$("selector").has("selector");//para comprobar el siel primer selector contiene el segundo\
+$("selector").is("selector");//devulve true si los selectores son iguales\
+$("selector").not("selector");//devulve true si los selectores son distintos\
+\
+\
+---------------------------------------------------------------------------------------------------------------------------\
+video 10\
+AJAX\
+\
+$("selector").load("archivo.php");//permite cargar un archivo en un selector\
+$.ajax(Options);//metodo de jquery para utilizar ajax\
+\
+---------------------------------------------------------------------------------------------------------------------------\
+video 11\
+manejo de bases de datos\
+\
+---------------------------------------------------------------------------------------------------------------------------\
+video 12\
+plug-in en jquery - validacion de formularios\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+}

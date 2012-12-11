@@ -1,0 +1,59 @@
+.descripcionTabla
+{
+	/*fondo gris oscuro*/
+	background-color: #4d4e53;
+	/*letra blanca*/
+	color: white;
+}
+
+.cabeceraTabla
+{
+	/*letra gris oscuro*/
+	color: #4d4e53;
+}
+
+div #infoCabecera
+{
+	/*fondo Rojo*/
+	background-color: #96202d;
+	/*letra blanca*/
+	color: white;
+	/*enlace gris oscuro*/
+	/* OJO -> color:#aaaaaa;*/
+}
+
+.letrasMenuAbecedario a
+{
+	color: #8c8d8e
+}
+
+#mimodal, #mimodal3, #mimodal4
+{
+	width: 73%;
+	margin: -40% -37%;
+}
+
+#mimodal2
+{
+	margin: -41% -22%;
+}
+
+#formularioLogin
+{
+	margin: 9% auto;
+	background-color: #96202d;
+	color:black;
+	width: 550px;
+}
+
+.control-label b
+{
+	color: #EBEBEB;
+}
+
+#formularioBusquedaContacto
+{
+	padding: 0.5% 15%;
+}
+
+
