@@ -1,9 +1,7 @@
 <?php
-include_once("../includes/sesion.php");
-include_once("../includes/header.php");
 require_once("../clases/Contacto.php");
 require_once("../clases/MiBase.php");
-
+include_once("../includes/sesion.php");
 
 if (!isset($_SESSION['usuario']))
 	{
@@ -86,5 +84,4 @@ else
 
 <?php
 	}
-include("includes/footer.php");
 ?>

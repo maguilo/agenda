@@ -2,7 +2,7 @@
 require_once("../clases/Usuario.php");
 require_once("../clases/Contacto.php");
 include_once("../includes/sesion.php");
-include_once("../includes/header.php");
+//include_once("../includes/header.php");
 
 if (!isset($_SESSION['usuario']))
 	{
@@ -78,7 +78,6 @@ else
 	</form>
 
 
-<?php
-include("includes/footer.php");
-}
+<?
+	}
 ?>
